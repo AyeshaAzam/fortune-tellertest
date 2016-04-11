@@ -43,6 +43,9 @@ public class FortuneTellerTest {
         assertFalse("should return false for invalid input", result);
     }
     
+    //testing Height different scenario:
+    
+    
     @Test
     public void testSetHeight() {
         MagicNumbers magicNumbersMock = mock(MagicNumbers.class);
@@ -52,6 +55,19 @@ public class FortuneTellerTest {
         assertTrue("should return true for valid input", result);
         verify(magicNumbersMock, times(1)).setHeight(160);
     }
+    
+    @Test
+    public void testSetHeightWithInvalidInput() {
+        MagicNumbers magicNumbersMock = mock(MagicNumbers.class);
+        Translator translatorMock = mock(Translator.class);
+        FortuneTeller fortuneTeller = new FortuneTeller(magicNumbersMock, translatorMock);
+        boolean result = fortuneTeller.setHeight("Not a valid number");
+        assertFalse("should return false for invalid input", result);
+        //verify(magicNumbersMock, times(1)).setHeight(null);
+        
+    }
+    
+    // testing Location test scenario
     
     @Test
     public void testSetLocation() {
@@ -85,7 +101,7 @@ public class FortuneTellerTest {
     } //do samre for name with empty string
     
     
-    
+    // for Testing Name(string)
     @Test
     public void testSetName() {
         MagicNumbers magicNumbersMock = mock(MagicNumbers.class);
@@ -96,6 +112,30 @@ public class FortuneTellerTest {
         verify(magicNumbersMock, times(1)).setName("Ayesha");
     }
     
+    
+    @Test
+    public void testSetNameWithNullInput() {
+        MagicNumbers magicNumbersMock = mock(MagicNumbers.class);
+        Translator translatorMock = mock(Translator.class);
+        FortuneTeller fortuneTeller = new FortuneTeller(magicNumbersMock, translatorMock);
+        boolean result = fortuneTeller.setName(null);
+        //assertTrue("should return true for valid input", result);
+        //verify(magicNumbersMock, times(1)).setLocation("Stockholm");
+        assertEquals (result, false);
+    } 
+    
+    @Test
+    public void testSetNameWithEmptyInput() {
+        MagicNumbers magicNumbersMock = mock(MagicNumbers.class);
+        Translator translatorMock = mock(Translator.class);
+        FortuneTeller fortuneTeller = new FortuneTeller(magicNumbersMock, translatorMock);
+        boolean result = fortuneTeller.setName("");
+        //assertTrue("should return true for valid input", result);
+        //verify(magicNumbersMock, times(1)).setLocation("Stockholm");
+        assertEquals (result, false);
+    } 
+    
+    // testing Income test scenario
     @Test
     public void testSetIncomeWithInvalidInput() {
         MagicNumbers magicNumbersMock = mock(MagicNumbers.class);
