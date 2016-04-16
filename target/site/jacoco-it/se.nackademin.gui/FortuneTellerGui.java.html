@@ -67,21 +67,21 @@ public class FortuneTellerGui extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 <span class="pc bpc" id="L68" title="1 of 2 branches missed.">        if (e.getSource() == calculateButton) {</span>
 <span class="fc" id="L69">            boolean valid = true;</span>
-<span class="pc bpc" id="L70" title="1 of 2 branches missed.">            if (!fortuneTeller.setName(nameField.getText())) {</span>
-<span class="nc" id="L71">                valid = false;</span>
-<span class="nc" id="L72">                alert(&quot;Invalid name!&quot;);</span>
+<span class="fc bfc" id="L70" title="All 2 branches covered.">            if (!fortuneTeller.setName(nameField.getText())) {</span>
+<span class="fc" id="L71">                valid = false;</span>
+<span class="fc" id="L72">                alert(&quot;Invalid name!&quot;);</span>
 <span class="fc bfc" id="L73" title="All 2 branches covered.">            } else if (!fortuneTeller.setIncome(incomeField.getText())) {</span>
 <span class="fc" id="L74">                valid = false;</span>
 <span class="fc" id="L75">                alert(&quot;Invalid income! Must not contain anything but numbers.&quot;);</span>
-<span class="pc bpc" id="L76" title="1 of 2 branches missed.">            } else if (!fortuneTeller.setLocation(locationField.getText())) {</span>
-<span class="nc" id="L77">                valid = false;</span>
-<span class="nc" id="L78">                alert(&quot;Invalid location!&quot;);</span>
-<span class="pc bpc" id="L79" title="1 of 2 branches missed.">            } else if (!fortuneTeller.setAge(ageField.getText())) {</span>
-<span class="nc" id="L80">                valid = false;</span>
-<span class="nc" id="L81">                alert(&quot;Invalid age! Must not contain anything but numbers.&quot;);</span>
-<span class="pc bpc" id="L82" title="1 of 2 branches missed.">            } else if (!fortuneTeller.setHeight(heightField.getText())) {</span>
-<span class="nc" id="L83">                valid = false;</span>
-<span class="nc" id="L84">                alert(&quot;Invalid height! Must not contain anything but numbers.&quot;);</span>
+<span class="fc bfc" id="L76" title="All 2 branches covered.">            } else if (!fortuneTeller.setLocation(locationField.getText())) {</span>
+<span class="fc" id="L77">                valid = false;</span>
+<span class="fc" id="L78">                alert(&quot;Invalid location!&quot;);</span>
+<span class="fc bfc" id="L79" title="All 2 branches covered.">            } else if (!fortuneTeller.setAge(ageField.getText())) {</span>
+<span class="fc" id="L80">                valid = false;</span>
+<span class="fc" id="L81">                alert(&quot;Invalid age! Must not contain anything but numbers.&quot;);</span>
+<span class="fc bfc" id="L82" title="All 2 branches covered.">            } else if (!fortuneTeller.setHeight(heightField.getText())) {</span>
+<span class="fc" id="L83">                valid = false;</span>
+<span class="fc" id="L84">                alert(&quot;Invalid height! Must not contain anything but numbers.&quot;);</span>
             }
 <span class="fc bfc" id="L86" title="All 2 branches covered.">            if (valid) {</span>
 <span class="fc" id="L87">                resultField.setText(fortuneTeller.calculate());</span>
