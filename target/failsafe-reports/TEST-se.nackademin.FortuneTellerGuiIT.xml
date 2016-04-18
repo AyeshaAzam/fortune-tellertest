@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="se.nackademin.FortuneTellerGuiIT" time="60.708" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="se.nackademin.FortuneTellerGuiIT" time="59.386" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -58,15 +58,15 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testInvalidName" classname="se.nackademin.FortuneTellerGuiIT" time="7.451"/>
-  <testcase name="testInvalidHeight" classname="se.nackademin.FortuneTellerGuiIT" time="6.796"/>
-  <testcase name="testInvalidIncome" classname="se.nackademin.FortuneTellerGuiIT" time="6.146"/>
-  <testcase name="testInvalidLocation" classname="se.nackademin.FortuneTellerGuiIT" time="5.26"/>
-  <testcase name="testInvalidAge" classname="se.nackademin.FortuneTellerGuiIT" time="7.051"/>
-  <testcase name="testGetFortuneUsingGui" classname="se.nackademin.FortuneTellerGuiIT" time="5.974"/>
-  <testcase name="testGetFortuneAcceptance37" classname="se.nackademin.FortuneTellerGuiIT" time="4.467"/>
-  <testcase name="testGetFortuneAcceptance38" classname="se.nackademin.FortuneTellerGuiIT" time="4.211"/>
-  <testcase name="testGetFortuneAcceptance39" classname="se.nackademin.FortuneTellerGuiIT" time="4.607"/>
-  <testcase name="testGetFortuneAcceptance40" classname="se.nackademin.FortuneTellerGuiIT" time="4.586"/>
-  <testcase name="testGetFortuneAcceptance41" classname="se.nackademin.FortuneTellerGuiIT" time="4.057"/>
+  <testcase name="testInvalidName" classname="se.nackademin.FortuneTellerGuiIT" time="6.595"/>
+  <testcase name="testInvalidHeight" classname="se.nackademin.FortuneTellerGuiIT" time="6.748"/>
+  <testcase name="testInvalidIncome" classname="se.nackademin.FortuneTellerGuiIT" time="6.103"/>
+  <testcase name="testInvalidLocation" classname="se.nackademin.FortuneTellerGuiIT" time="5.156"/>
+  <testcase name="testInvalidAge" classname="se.nackademin.FortuneTellerGuiIT" time="6.915"/>
+  <testcase name="testGetFortuneUsingGui" classname="se.nackademin.FortuneTellerGuiIT" time="5.972"/>
+  <testcase name="testGetFortuneAcceptance37" classname="se.nackademin.FortuneTellerGuiIT" time="4.427"/>
+  <testcase name="testGetFortuneAcceptance38" classname="se.nackademin.FortuneTellerGuiIT" time="4.213"/>
+  <testcase name="testGetFortuneAcceptance39" classname="se.nackademin.FortuneTellerGuiIT" time="4.532"/>
+  <testcase name="testGetFortuneAcceptance40" classname="se.nackademin.FortuneTellerGuiIT" time="4.578"/>
+  <testcase name="testGetFortuneAcceptance41" classname="se.nackademin.FortuneTellerGuiIT" time="4.052"/>
 </testsuite>

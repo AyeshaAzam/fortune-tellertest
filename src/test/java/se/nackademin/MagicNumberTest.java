@@ -23,6 +23,20 @@ public class MagicNumberTest {
     public void testA() {
         assertEquals("A is not calculated correctly", 4, magicNumbers.calculateA());
     }
+    // creat new test case for A
+   @Test
+    public void testAResultGreaterThan9() {
+        magicNumbers.setAge(9);
+        magicNumbers.setName("Ayesha");
+        assertEquals(true, (magicNumbers.calculateA()> 9 || magicNumbers.calculateA()< 0));
+    }
+    
+    @Test
+    public void testAResultLessThanZero() {
+        magicNumbers.setAge(-1);
+        magicNumbers.setName("Ayesha");
+        //assertEquals(true, (magicNumbers.calculateA()> 9 || magicNumbers.calculateA()< 0));
+    }
 
     @Test
     public void testB() {
